@@ -35,7 +35,7 @@ function createCustomerAPI(customerData) {
         data: JSON.stringify(customerData),
         success: function(response) {
             alert("Successfully created customer")
-            window.location.href = "./index.html";
+            window.location.href = "./Home.html";
         },
         error: function(xhr) {
             if (xhr.status === 400) {

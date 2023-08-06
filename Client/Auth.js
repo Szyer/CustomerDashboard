@@ -7,7 +7,7 @@ document.getElementById('loginForm').addEventListener('submit', async function (
     try {
         const response = await loginUser(loginId, password);
         console.log('Login Successful', response);
-        alert("Logged in!")
+        window.location.href= "./Home.html";
      
     } catch (error) {
         console.error('Login Failed', error);
